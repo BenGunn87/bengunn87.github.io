@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blocks: Textareabox</title>
+    <script src="../../dist/toolkit.js"></script>
+    <link rel="stylesheet" href="textareabox.scss"/>
+</head>
+<body>
+
+    <div class="js-textareabox"></div>
+    <div class="js-textareabox-disabled"></div>
+
+    <script>
+      (function () {
+        'use strict';
+        const textareabox = new Textareabox({
+          name: 'test',
+          label: 'Тест1',
+          value: 'hello world',
+          required: true
+        });
+        const textareabox2 = new Textareabox({
+          name: 'test2',
+          label: 'Тест2',
+          value: 'hello world',
+          mod: ['disabled']
+        });
+        textareabox.render(document.querySelector('.js-textareabox'));
+        textareabox2.render(document.querySelector('.js-textareabox-disabled'));
+      })();
+    </script>
+
+</body>
+</html>

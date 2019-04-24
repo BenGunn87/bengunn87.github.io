@@ -1,0 +1,22 @@
+.textbox{
+  &__input{
+    &_error{
+      background-color: #ffa3a0 !important;
+    }
+  }
+}
+
+.required{
+  color: red;
+  margin-left: .5rem;
+}
+
+.error{
+  background-color: #ffa3a0 !important;
+}
+
+label{
+  display: inline-block !important;
+  margin-right: .5rem;
+  margin-top: .4rem;
+}

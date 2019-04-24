@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blocks: Button</title>
+    <script src="../../dist/toolkit.js"></script>
+    <link rel="stylesheet" href="button.scss"/>
+</head>
+<body>
+
+    <div class="js-button"></div>
+
+    <script>
+      (function () {
+        'use strict';
+
+        const button = new Button({
+          name: 'submit',
+          value: 'Submit',
+          type: 'submit'
+        });
+
+        button.render(document.querySelector('.js-button'));
+      })();
+
+    </script>
+
+</body>
+</html>

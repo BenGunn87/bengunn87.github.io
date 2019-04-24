@@ -1,0 +1,7 @@
+div.row
+    label(for=name) #{label}
+div.row
+  div.col.col--6
+    textarea.u-full-width.textareabox__textarea(id=name, name=name,placeholder=label) #{value}
+    if required
+        span.pure-form-message-inline

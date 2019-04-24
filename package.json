@@ -1,0 +1,48 @@
+{
+  "name": "noteediterjs",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack-cli --watch",
+    "lint": "eslint ./blocks/**/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenGunn87/noteEditerJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenGunn87/noteEditerJS/issues"
+  },
+  "homepage": "https://github.com/BenGunn87/noteEditerJS#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-css-modules": "^2.11.0",
+    "eslint-plugin-node": "^7.0.0",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "node-sass": "^4.9.3",
+    "pre-commit": "^1.2.2",
+    "pug": "^2.0.3",
+    "pug-loader": "^2.4.0",
+    "sass-loader": "^7.0.3",
+    "scss": "^0.2.4",
+    "static-server": "^2.2.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "devDependencies": {
+    "eslint-plugin-import": "^2.17.1"
+  }
+}

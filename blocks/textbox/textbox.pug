@@ -1,0 +1,8 @@
+div.textbox
+    div.row
+        div.col.col--2
+            label(for=name) #{label}
+        div.col.col--8
+            input.textbox__input(id=name, type=type, name=name, value=value, placeholder=label)
+            if required
+                span.required *
