@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blocks: ButtonsPanel</title>
+    <script src="../../dist/toolkit.js"></script>
+</head>
+<body>
+
+    <div class="js-buttons-panel"></div>
+
+    <script>
+      (function () {
+        'use strict';
+
+        const buttonsPanel = new ButtonsPanel();
+        buttonsPanel.render(document.querySelector('.js-buttons-panel'));
+      })();
+
+    </script>
+
+</body>
+</html>

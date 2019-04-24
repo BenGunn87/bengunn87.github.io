@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blocks: Textbox</title>
+    <script src="../../dist/toolkit.js"></script>
+</head>
+<body>
+
+    <div class="js-editbox" style="height: 300px"></div>
+
+    <script>
+      (function () {
+        'use strict';
+
+        const editbox = new EditBox();
+        editbox.render(document.querySelector('.js-editbox'));
+      })();
+
+    </script>
+
+</body>
+</html>

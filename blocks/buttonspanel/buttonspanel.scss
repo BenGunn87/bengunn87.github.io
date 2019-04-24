@@ -1,0 +1,14 @@
+$DarkGray: #E5E5E5;
+
+.buttons-panel {
+  background-color: $DarkGray;
+
+  &__btnadd{
+    float: left;
+  }
+
+  &__btnback{
+    float: left;
+  }
+}
+
