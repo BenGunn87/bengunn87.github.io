@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blocks: NoteCard</title>
+    <script src="../../dist/toolkit.js"></script>
+</head>
+<body>
+
+    <div class="js-notecard" style="height: 300px"></div>
+
+    <script>
+      (function () {
+        'use strict';
+
+        const noteCard = new NoteCard({
+            noteid: 1,
+            title: 'Заголовок',
+            noteText: 'Текст заметки порлдыа ыпдофырп  ывпфоывд а фыварфылдв аф фыварфыд аф фываофы ва ывафыовар фд фывфлдафыр вадфоыв фыв афыд'
+            });
+        noteCard.render(document.querySelector('.js-notecard'));
+      })();
+
+    </script>
+
+</body>
+</html>

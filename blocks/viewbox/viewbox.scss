@@ -1,0 +1,13 @@
+$White: #FFFFFF;
+
+.viewbox{
+  background-color: $White;  
+  width: 100%;
+  height: 100%;
+  &__note-title{
+    margin-bottom: 5px;
+  }
+  &__note-text{
+    width: 100%;
+  }
+}

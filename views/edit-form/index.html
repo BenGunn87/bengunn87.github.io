@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View: EditForm</title>
+    <script src="../../dist/toolkit.js"></script>
+</head>
+<body>
+
+    <div class="js-edit-form"></div>
+
+    <script>
+      (function () {
+        'use strict';
+        const mainBox = new MainBox();
+        const editForm = new EditForm();
+
+        mainBox.render(document.querySelector('.js-edit-form'));
+        editForm.render(document.querySelector('.mainbox'));
+        editForm.toggle(true);
+      })();
+
+    </script>
+
+</body>
+</html>

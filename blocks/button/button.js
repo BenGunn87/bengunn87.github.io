@@ -17,7 +17,7 @@ export class Button extends Block {
     return template(data);
   }
   setOnClick (fn) {
-    const btn = this.el.querySelector(this.getElement('button'));
+    const btn = this.getElement('button');
     btn.onclick = fn;
   }
 }

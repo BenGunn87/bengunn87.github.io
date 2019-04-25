@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blocks: Viewbox</title>
+    <script src="../../dist/toolkit.js"></script>
+</head>
+<body>
+
+    <div class="js-viewbox" style="height: 300px"></div>
+
+    <script>
+      (function () {
+        'use strict';
+
+        const viewbox = new ViewBox({
+          title: 'Заголовок',
+          noteText: 'Текст заметки'
+        });
+        viewbox.render(document.querySelector('.js-viewbox'));
+      })();
+
+    </script>
+
+</body>
+</html>

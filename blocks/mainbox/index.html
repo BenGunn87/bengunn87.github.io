@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blocks: Mainbox</title>
+    <script src="../../dist/toolkit.js"></script>
+    <link rel="stylesheet" href="mainbox.scss"/>
+</head>
+<body>
+
+    <div class="js-mainbox"></div>
+
+    <script>
+      (function () {
+        'use strict';
+
+        const mainbox = new MainBox();
+
+        mainbox.render(document.querySelector('.js-mainbox'));
+      })();
+
+    </script>
+
+</body>
+</html>

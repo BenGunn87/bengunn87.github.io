@@ -15,16 +15,24 @@ export class ButtonsPanel extends Block {
   get bemName () {
     return 'buttons-panel';
   }
-  constructor (option) {
-    super(option);
-    this.btnAdd = new Button({
-      name: 'btnadd',
-      value: '+'
-    });
-    this.btnBack = new Button({
-      name: 'btnback',
-      value: '<'
-    });
+  constructor (options = {}) {
+    super(options);
+    if (options.btnone) {
+      this.btnAdd = new Button(options.btnone);
+    } else {
+      this.btnAdd = new Button({
+        name: 'btnadd',
+        value: '+'
+      });
+    }
+    if (options.btntwo) {
+      this.btnBack = new Button(options.btntwo);
+    } else {
+      this.btnBack = new Button({
+        name: 'btnback',
+        value: '<'
+      });
+    }
   }
   template (data) {
     return template(data);

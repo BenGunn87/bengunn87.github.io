@@ -19,4 +19,7 @@ export class Textbox extends Block {
     this.getElement('input').classList.toggle('textbox__input_error', false);
     return this.getElement('input').value;
   }
+  set value (val) {
+    this.getElement('input').value = val;
+  }
 }

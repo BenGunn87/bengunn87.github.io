@@ -1,0 +1,22 @@
+$White: #FFFFFF;
+$DarkGray: #E5E5E5;
+
+.note-card-list{
+  background-color: $DarkGray;  
+  width: 100%;
+  height: 100%;
+  &__search{
+    width: 100%;   
+	background-color: $DarkGray;
+  }
+  &__list{
+    background-color: $White; 
+	width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+  &__card-hiden{
+    display: none
+  }
+}
+

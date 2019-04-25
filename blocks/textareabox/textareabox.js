@@ -14,4 +14,7 @@ export class Textareabox extends Block {
   get value () {
     return this.getElement('textarea').innerText;
   }
+  set value (val) {
+    this.getElement('textarea').innerText = val;
+  }
 }

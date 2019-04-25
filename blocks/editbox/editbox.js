@@ -36,6 +36,10 @@ export class EditBox extends Block {
     result.noteText = this.noteTextarea.value();
     return result;
   }
+  set value ({ title, noteText }) {
+    this.noteTitle.value = title;
+    this.noteTextarea.value = noteText;
+  }
   render (el) {
     super.render(el);
     this.noteTitle.render(this.getElement('note-title'));

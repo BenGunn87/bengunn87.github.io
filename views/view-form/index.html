@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View: view-form</title>
+    <script src="../../dist/toolkit.js"></script>
+</head>
+<body>
+
+    <div class="js-view-form"></div>
+
+    <script>
+      (function () {
+        'use strict';
+        const mainBox = new MainBox();
+        const viewForm = new ViewForm({
+            cardList: [{
+                noteid: 1,
+                title: 'Заголовок1',
+                noteText: 'Текст заметки1'
+            }, {
+                noteid: 2,
+                title: 'Заголовок2',
+                noteText: 'Текст заметки2'
+            }, {
+                noteid: 3,
+                title: 'Заголовок3',
+                noteText: 'Текст заметки3'
+            }]
+        });
+
+        mainBox.render(document.querySelector('.js-view-form'));
+        viewForm.render(document.querySelector('.mainbox'));
+        viewForm.toggle(true);
+      })();
+
+    </script>
+
+</body>
+</html>
