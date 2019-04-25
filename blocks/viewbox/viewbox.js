@@ -13,8 +13,12 @@ export class ViewBox extends Block {
     return template(data);
   }
   set value ({ title, noteText }) {
-    this.noteTitle.innerHTML = title;
-    this.noteText.innerHTML = noteText;
+    this.noteTitle.innerText = title;
+    this.noteText.innerText = noteText;
+  }
+  clear () {
+    this.noteTitle.innerText = '';
+    this.noteText.innerText = '';
   }
   render (el) {
     super.render(el);

@@ -32,13 +32,17 @@ export class EditBox extends Block {
   }
   get value () {
     const result = {};
-    result.title = this.noteTitle.value();
-    result.noteText = this.noteTextarea.value();
+    result.title = this.noteTitle.value;
+    result.noteText = this.noteTextarea.value;
     return result;
   }
   set value ({ title, noteText }) {
     this.noteTitle.value = title;
     this.noteTextarea.value = noteText;
+  }
+  clear () {
+    this.noteTitle.value = '';
+    this.noteTextarea.value = '';
   }
   render (el) {
     super.render(el);

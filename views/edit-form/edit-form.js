@@ -1,5 +1,6 @@
 import { EditBox } from '../../blocks/editbox/editbox';
 import { ButtonsPanel } from '../../blocks/buttonspanel/buttonspanel';
+import { Note } from '../../model/note';
 import { View } from '../view';
 import template from './edit-form.pug';
 
@@ -26,6 +27,10 @@ export class EditForm extends View {
     super.render(el);
     this.buttonsPanel.render(this.getElement('buttonspanel'));
     this.buttonsPanel.btnBack.setOnClick(() => {
+      this.editBox.value = {
+        title: '',
+        noteText: ''
+      };
       window.location.hash = '#view';
     });
     this.editBox.render(this.getElement('editbox'));

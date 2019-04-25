@@ -14,8 +14,8 @@ export class NoteCard extends Block {
   }
   set value ({ title, noteText }) {
     this.noteTitle.innerHTML = title;
-    if (noteText.length > 60) {
-      noteText = noteText.slice(0, 60) + '...';
+    if (noteText.length > 40) {
+      noteText = noteText.slice(0, 40) + '...';
     }
     this.noteText.innerHTML = noteText;
   }

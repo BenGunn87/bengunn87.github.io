@@ -12,9 +12,9 @@ export class Textareabox extends Block {
     return template(data);
   }
   get value () {
-    return this.getElement('textarea').innerText;
+    return this.getElement('textarea').value;
   }
   set value (val) {
-    this.getElement('textarea').innerText = val;
+    this.getElement('textarea').value = val;
   }
 }
