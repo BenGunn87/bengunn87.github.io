@@ -13,6 +13,9 @@ export class NoteCard extends Block {
     return template(data);
   }
   set value ({ title, noteText }) {
+    if (title.length > 25) {
+      title = title.slice(0, 22) + '...';
+    }
     this.noteTitle.innerHTML = title;
     if (noteText.length > 40) {
       noteText = noteText.slice(0, 40) + '...';
